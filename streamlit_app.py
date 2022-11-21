@@ -35,15 +35,15 @@ try:
   streamlit.dataframe(fruityvice_normalized)
   
 except URLError as e:
-   streamlit.error()
+ streamlit.error()
 
 #streamlit.text(fruityvice_response.json())
 
 
 # take the json and normalise
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output
-streamlit.dataframe(fruityvice_normalized)
+#streamlit.dataframe(fruityvice_normalized)
 streamlit.stop()
 
 
